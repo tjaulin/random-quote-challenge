@@ -4,51 +4,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Random Quote Generator" />
+  <meta name="author" content="Gennecode" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Random Quote" />
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
   <title>Random Quote | devChallenges.io</title>
-
-  <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-    }
-
-    .author-info {
-      font-size: 14px;
-      text-align: center;
-      margin-top: 16px;
-      color: rgb(55, 65, 81);
-    }
-
-    .author-info a {
-      text-decoration: none;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- 
+  <div class="content">
+    <div class="quote-box">
+      <p id="author"></p>
+      <div id="tags"></div>
+      <p id="quote"></p>
+    </div>
+    <div class="buttons">
+      <button class="btn" id="random-btn">Random <img src="resources/regroup.svg" alt="Regroup image"></button>
+      <button class="btn" id="share-btn">Share <img src="resources/link.svg" alt="Link image"></button>
+    </div>
+  </div>
 
-  Random
+  <div class="author-info">
+    Coded by <a href="https://github.com/tjaulin" target="_blank">Gennecode</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </div>
 
-  Share
-  
-  -->
-
-  <!-- <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

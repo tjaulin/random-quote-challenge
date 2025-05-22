@@ -1,0 +1,136 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* --primary-bg: #20293A; */
+    --primary-bg: #111629;
+    --secondary-bg: #20293A;
+    /* --secondary-bg: #4A5567; */
+    --primary-color: #ECEDF0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.quote-box {
+    background-color: var(--secondary-bg);
+    background-image: url('../resources/bg-image-random-quote.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+    padding: 30px 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quote {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    user-select: text;
+}
+
+#author {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#tags {
+    display: flex;
+    gap: 10px;
+}
+
+#tags .tag {
+    color: #AEB0FF;
+    padding: 3px 10px;
+    border: 1px solid #AEB0FF;
+    border-radius: 500px;
+    font-size: 10px;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--secondary-bg);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    background-color: #283348;
+    transition: 0.3s;
+}
+
+.confirmation-message {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    z-index: 1000;
+}
+
+.author-info {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: var(--primary-color);
+}
+
+.author-info a {
+    color: #AEB0FF;
+}
+
+.author-info a:hover {
+    text-decoration: none;
+    color: #a2a3ec;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 520px) {
+    .quote-box {
+        width: 100%;
+    }
+
+    .author-info {
+        display: none;
+    }
+}
