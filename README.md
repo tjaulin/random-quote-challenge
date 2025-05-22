@@ -9,7 +9,7 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://tjaulin.github.io/random-quote-challenge/">
       Demo
     </a>
     <span> | </span>
@@ -44,6 +44,8 @@
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Javascript
+- API
 
 ## Features
 
