@@ -125,7 +125,7 @@ body {
 
 @media screen and (max-width: 520px) {
     .quote-box {
-        width: 100%;
+        width: 90%;
     }
 
     .author-info {
