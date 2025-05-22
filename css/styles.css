@@ -4,10 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* --primary-bg: #20293A; */
     --primary-bg: #111629;
     --secondary-bg: #20293A;
-    /* --secondary-bg: #4A5567; */
     --primary-color: #ECEDF0;
 }
 
